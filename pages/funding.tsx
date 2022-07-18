@@ -112,17 +112,17 @@ const Funding = () => {
                   </div>
                 </dd>
 
+                    <a href={item.link} className="font-medium text-white">
                 <div
                   className={`absolute hover:bg-opacity-80 transition cursor-pointer bottom-0 inset-x-0
                      rounded-b-xl ${item.bgColor} px-4 py-3 sm:px-5 `}
                 >
-                  <div className="text-sm lg:${it}">
-                    <a href={item.link} className="font-medium text-white">
+                  <div className="text-sm lg:${it} font-medium text-white">
                       {" "}
                       {item.linkText} →
-                    </a>
                   </div>
                 </div>
+                    </a>
               </div>
             </div>
           ))}

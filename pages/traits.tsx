@@ -32,7 +32,7 @@ const Traits = () => {
           title="234 heads, 21 glasses, 30 bodies, 137 accessories"
           body={
             <>
-              All the individual traits sized up to 500 x 500px for your
+              All the individual traits, downloadable for your
               convenience. If you need other downloads check out the{" "}
               {assetsPage}.
             </>
@@ -74,7 +74,7 @@ const Traits = () => {
                   <img
                     src={`/traits/glasses/glasses-square-${g.image}.png`}
                     alt="glasses"
-                    className="h-12 w-12"
+                    className="h-14 w-14"
                   />
                   <p className="text-nouns text-black text-center tracking-wider xs:text-sm sm:text-lg">
                     {g.name}
@@ -95,7 +95,7 @@ const Traits = () => {
                   <img
                     src={`/traits/bodies/body-${body.image}.png`}
                     alt="body"
-                    className="h-12 w-12"
+                    className="h-14 w-14"
                   />
                   <p className="text-nouns text-black text-center tracking-wider xs:text-sm sm:text-lg">
                     {body.name}
