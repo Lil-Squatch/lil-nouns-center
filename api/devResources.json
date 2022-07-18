@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Lil Nouns Protocol",
+    "imageUrl": "protocol.png",
+    "bio": "Suite of smart contracts that generates and auctions a Lil Noun every day. This is a fork of the Nouns protocol.",
+    "url": "https://lilnouns.notion.site/Noun-Protocol-forked-with-amendments-to-contract-addresses-9cc199c4cfce49b983fe0889bae8e796",
+    "btnText": "Read More",
+    "notion": true,
+    "notionId": "32e4f0bf74fe433e927e2ea35e52a507"
+  },
+  {
+    "name": "Github Org",
+    "imageUrl": "github.png",
+    "bio": "Official GitHub of Lil Nouns.",
+    "url": "https://github.com/lilnounsDAO",
+    "btnText": "Go to Github",
+    "notion": false,
+    "notionId": ""
+  },
+  {
+    "name": "Lil Nouns Smart Contract Architecture",
+    "imageUrl": "smartcontract.png",
+    "bio": "NounsToken, NounsSeeder, NounsDescriptor, NounsAuctionHouse, NounsDAOExecutor, NounsDAOProxy, and NounsDAOLogicV1.",
+    "url": "https://lilnouns.notion.site/Lil-Nouns-Smart-contract-architecture-a4cadc430d97409e99d17ce09720e4d0",
+    "btnText": "Read More",
+    "notion": true,
+    "notionId": "eb6e3e2c9c5f49feb09b5bad26a6001c"
+  },
+  {
+    "name": "Subgraph",
+    "imageUrl": "subgraph.png",
+    "bio": "Subgraph for Lil Nouns proposals & auctions.",
+    "url": "https://thegraph.com/hosted-service/subgraph/lilnounsdao/lil-nouns-subgraph",
+    "btnText": "Read More",
+    "notion": false,
+    "notionId": ""
+  }
+]

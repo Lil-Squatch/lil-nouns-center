@@ -1,0 +1,75 @@
+[
+  {
+    "name": "About Lil Nouns",
+    "defaultOpen": true,
+    "current": false,
+    "children": [
+      {
+        "name": "Intro",
+        "link": "/intro",
+        "external": false
+      },
+      {
+        "name": "Traits",
+        "link": "/traits",
+        "external": false
+      }
+    ]
+  },
+  {
+    "name": "For Builders",
+    "current": false,
+    "defaultOpen": true,
+    "children": [
+      {
+        "name": "Assets",
+        "link": "/assets",
+        "external": false
+      },
+      {
+        "name": "GitHub",
+        "link": "https://github.com/lilnounsDAO/lilnouns-monorepo",
+        "external": true
+      },
+      {
+        "name": "Dev Resources",
+        "link": "/dev",
+        "external": false
+      }
+    ]
+  },
+  {
+    "name": "Get Funding",
+    "current": false,
+    "defaultOpen": true,
+    "children": [
+      {
+        "name": "Overview",
+        "link": "/funding",
+        "external": false
+      },
+      {
+        "name": "Proposals",
+        "link": "/funding/proposals",
+        "external": false
+      },
+      {
+        "name": "Lil Grants",
+        "link": "/funding/lilgrants",
+        "external": false
+      }
+    ]
+  },
+  {
+    "name": "Community",
+    "current": false,
+    "defaultOpen": true,
+    "children": [
+      {
+        "name": "Talent",
+        "link": "/talent",
+        "external": false
+      }
+    ]
+  }
+]
