@@ -18,13 +18,13 @@ export const Home: React.FC<{
 
   useEffect(() => {
     new Fountain({ buttonId: buttonId.toString() });
-  }, []);
+  }, [buttonId]);
 
   const animation = useCallback(async () => {
     setAnimate(true);
 
     buttonAction();
-  }, []);
+  }, [buttonAction]);
 
   return (
     <Link passHref href={`/${path}`}>
