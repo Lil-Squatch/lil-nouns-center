@@ -1,7 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
 import Divider from "../Divider";
-import Newsletter from "../Newsletter";
 import Footer from "../Footer";
 
 const PageContent = ({ children }) => {
