@@ -10,7 +10,7 @@ const funding = [
   {
     source: "Lil Grants",
     range: "0.1 - 5",
-    link: "/funding/smallgrants",
+    link: "/funding/lilgrants",
     linkText: "Request a grant",
     lilNounsRequiredText: "NO LIL NOUN NEEDED TO APPLY",
     tagline: <>

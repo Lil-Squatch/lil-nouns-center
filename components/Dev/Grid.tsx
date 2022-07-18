@@ -42,12 +42,9 @@ const Grid = () => {
 
                   <a
                     href={
-                      resource.notion
-                        ? "/dev/" +
-                          resource.name.replace(/\s+/g, "-").toLowerCase()
-                        : resource.url
+                         resource.url
                     }
-                    target={resource.notion ? "_self" : "_blank"}
+                    target={"_blank"}
                     rel="noreferrer"
                     key={resource.name}
                     className="inline-flex capitalize items-center justify-center rounded-md border border-transparent  px-4 py-2  mt-2 text-sm font-medium shadow-sm  transition duration-100 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto  bg-blue-base text-white focus:ring-gray-200 hover:bg-opacity-80"

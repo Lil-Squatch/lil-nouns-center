@@ -37,7 +37,7 @@ import Title from "../../components/Title";
 //   };
 // }
 
-const smallgrants = () => {
+const lilgrants = () => {
   return (
     <>
       <PageHeader>
@@ -120,4 +120,4 @@ n            <Link
   );
 };
 
-export default smallgrants;
+export default lilgrants;
