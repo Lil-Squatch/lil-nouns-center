@@ -57,6 +57,11 @@
         "name": "Lil Grants",
         "link": "/funding/lilgrants",
         "external": false
+      },
+      {
+        "name": "Prop House",
+        "link": "/funding/prophouse",
+        "external": false
       }
     ]
   },
