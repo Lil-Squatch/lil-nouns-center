@@ -104,10 +104,10 @@ const Talent = (props) => {
                       </div>
                     )}
 
-                    {person.discord !== "" && person.discordId !== "" && (
+                    {person.discord !== "" && (
                       <div className="-ml-px w-0 flex-1 flex cursor-pointer hover:bg-gray-100 transition duration-150 rounded-br-lg ">
                         <a
-                          href={` https://discord.com/users/${person.discordId}`}
+                          href={person.discordId !== "" && `https://discord.com/users/${person.discordId}`}
                           target="_blank"
                           rel="noreferrer"
                           className="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent hover:text-gray-500 truncate px-2"
