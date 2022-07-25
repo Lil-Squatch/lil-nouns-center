@@ -74,6 +74,11 @@
         "name": "Talent",
         "link": "/talent",
         "external": false
+      },
+      {
+        "name": "Projects",
+        "link": "/projects",
+        "external": false
       }
     ]
   }
