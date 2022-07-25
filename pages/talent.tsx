@@ -28,7 +28,7 @@ export const getStaticProps = async (context) => {
 
   return {
     props: { talent: talentDataFromAPI },
-    revalidate: 60
+    revalidate: 1
   };
 };
 
