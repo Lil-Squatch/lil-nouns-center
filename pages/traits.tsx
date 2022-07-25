@@ -32,9 +32,8 @@ const Traits = () => {
           title="234 heads, 21 glasses, 30 bodies, 137 accessories"
           body={
             <>
-              All the individual traits, downloadable for your
-              convenience. If you need other downloads check out the{" "}
-              {assetsPage}.
+              All the individual traits, downloadable for your convenience. If
+              you need other downloads check out the {assetsPage}.
             </>
           }
         />

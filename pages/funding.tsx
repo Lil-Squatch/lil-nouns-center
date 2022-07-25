@@ -13,24 +13,20 @@ const funding = [
     link: "/funding/lilgrants",
     linkText: "Request a grant",
     lilNounsRequiredText: "NO LIL NOUN NEEDED TO APPLY",
-    tagline: <>
-    <ul className="list-decimal px-4">
-      <li>
-        To pilot a project that has a larger goal
-      </li>
-      <li>
-        Bolt on already finished project
-      </li>
-      <li>
-        Retroactive funding for services
-      </li>
-    </ul>
-    </>,
+    tagline: (
+      <>
+        <ul className="list-decimal px-4">
+          <li>To pilot a project that has a larger goal</li>
+          <li>Bolt on already finished project</li>
+          <li>Retroactive funding for services</li>
+        </ul>
+      </>
+    ),
     textColor: "text-[#028940]",
     bgColor: "bg-[#028940]",
     img: "sml.png",
     marginBottom: "",
-    marginTop: ""
+    marginTop: "",
   },
   {
     source: "Prop House",
@@ -39,20 +35,24 @@ const funding = [
     link: "/funding/prophouse",
     linkText: "Submit prop",
     lilNounsRequiredText: "NO LIL NOUN NEEDED TO APPLY",
-    tagline:
-    <>
-      Run by Prop House. Submit proposals to <Link
-        brandText={false}
-        leavesPage={true}
-        text="prop.house/lil-nouns"
-        url="prop.house/lil-nouns"
-      />. Each round has a specified ETH amount, and the community votes on who wins.
-    </>,
+    tagline: (
+      <>
+        Run by Prop House. Submit proposals to{" "}
+        <Link
+          brandText={false}
+          leavesPage={true}
+          text="prop.house/lil-nouns"
+          url="prop.house/lil-nouns"
+        />
+        . Each round has a specified ETH amount, and the community votes on who
+        wins.
+      </>
+    ),
     textColor: "text-blue-base",
     bgColor: "bg-blue-base",
     img: "med.png",
     marginBottom: "mb-5",
-    marginTop: ""
+    marginTop: "",
   },
   {
     source: "Proposals",
@@ -68,13 +68,11 @@ const funding = [
     bgColor: "bg-[#E5284A]",
     img: "lg.png",
     marginBottom: "mb-10",
-    marginTop: "mt-5"
+    marginTop: "mt-5",
   },
 ];
 
-
 const Funding = () => {
-
   return (
     <>
       <PageHeader>
@@ -103,26 +101,30 @@ const Funding = () => {
                 <dd className="mt-1 flex flex-col justify-between items-baseline md:block lg:flex font-extrabold">
                   <div className="items-baseline text-4xl">{item.range}Ξ </div>
 
-                  <div className="text-sm mt-2">{item.lilNounsRequiredText}</div>
+                  <div className="text-sm mt-2">
+                    {item.lilNounsRequiredText}
+                  </div>
 
-                  <div className={`pt-3 text-sm flex flex-col gap-1 ${item.marginBottom} ${item.marginTop}`}>
+                  <div
+                    className={`pt-3 text-sm flex flex-col gap-1 ${item.marginBottom} ${item.marginTop}`}
+                  >
                     <span className="font-normal text-black pt-4">
                       {item.tagline}
                     </span>{" "}
                   </div>
                 </dd>
 
-                    <a href={item.link} className="font-medium text-white">
-                <div
-                  className={`absolute hover:bg-opacity-80 transition cursor-pointer bottom-0 inset-x-0
+                <a href={item.link} className="font-medium text-white">
+                  <div
+                    className={`absolute hover:bg-opacity-80 transition cursor-pointer bottom-0 inset-x-0
                      rounded-b-xl ${item.bgColor} px-4 py-3 sm:px-5 `}
-                >
-                  <div className="text-sm lg:${it} font-medium text-white">
+                  >
+                    <div className="text-sm lg:${it} font-medium text-white">
                       {" "}
                       {item.linkText} →
+                    </div>
                   </div>
-                </div>
-                    </a>
+                </a>
               </div>
             </div>
           ))}

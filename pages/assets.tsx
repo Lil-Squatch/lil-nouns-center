@@ -10,9 +10,11 @@ import PageContent from "../components/Layout/PageContent";
 import Button from "../components/common/Button";
 import Link from "../components/Link";
 
-const nounsCenterAssetsLink  = (
+const nounsCenterAssetsLink = (
   <Link
-    leavesPage={true} text="nouns.center/assets" url="https://nouns.center/assets"
+    leavesPage={true}
+    text="nouns.center/assets"
+    url="https://nouns.center/assets"
   />
 );
 
@@ -27,8 +29,10 @@ const Assets = () => {
           title="Resource Hub"
           body={
             <p>
-             Repository of trait assets, fonts, and other resources you may need to work with Lil Nouns. For other assets (original Nouns assets, fonts, color pallets, etc.)
-             please visit {nounsCenterAssetsLink}
+              Repository of trait assets, fonts, and other resources you may
+              need to work with Lil Nouns. For other assets (original Nouns
+              assets, fonts, color pallets, etc.) please visit{" "}
+              {nounsCenterAssetsLink}
             </p>
           }
         />

@@ -18,7 +18,7 @@ const XSmall = ({ project }) => {
           </div>
           <img
             className="object-cover w-full h-full"
-            src={`/projects/${project.image}`}
+            src={project.image}
             alt={project.image}
           />
         </a>

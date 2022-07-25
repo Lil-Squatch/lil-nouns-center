@@ -9,7 +9,9 @@ import Title from "../components/Title";
 
 const nounsCenterDevLink = (
   <Link
-  leavesPage={true} text="nouns.center/dev" url="https://nouns.center/dev"
+    leavesPage={true}
+    text="nouns.center/dev"
+    url="https://nouns.center/dev"
   />
 );
 
@@ -20,12 +22,17 @@ const Dev = () => {
         <Header title="Dev | Lil Nouns Center" />
         <Title title="Dev Reources" />
 
-        <Subheader body={
-          <>
-          Here you will find a list of technical resources & docs about working with Lil Nouns as well as a link to our Github repos. 
-          As Lil Nouns is fork of the original Nouns protocol and thus shares much of its code / structures reviewing  {nounsCenterDevLink} may also be useful. 
-          </>
-        }/>
+        <Subheader
+          body={
+            <>
+              Here you will find a list of technical resources & docs about
+              working with Lil Nouns as well as a link to our Github repos. As
+              Lil Nouns is fork of the original Nouns protocol and thus shares
+              much of its code / structures reviewing {nounsCenterDevLink} may
+              also be useful.
+            </>
+          }
+        />
       </PageHeader>
 
       <PageContent>

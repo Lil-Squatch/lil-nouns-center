@@ -1,15 +1,15 @@
-import 'tailwindcss/tailwind.css';
-import '../styles/globals.css';
-import Layout from '../components/Layout';
-import algoliasearch from 'algoliasearch/lite';
-import { autocomplete, getAlgoliaResults } from '@algolia/autocomplete-js';
-import '@algolia/autocomplete-theme-classic';
-import { useRouter } from 'next/router';
+import "tailwindcss/tailwind.css";
+import "../styles/globals.css";
+import Layout from "../components/Layout";
+import algoliasearch from "algoliasearch/lite";
+import { autocomplete, getAlgoliaResults } from "@algolia/autocomplete-js";
+import "@algolia/autocomplete-theme-classic";
+import { useRouter } from "next/router";
 
-import { getDefaultWallets, RainbowKitProvider } from '@rainbow-me/rainbowkit';
-import { publicProvider } from 'wagmi/providers/public';
+import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
+import { publicProvider } from "wagmi/providers/public";
 
-import { chain, configureChains, createClient, WagmiConfig } from 'wagmi';
+import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
 
 const { chains, provider } = configureChains(
   [chain.mainnet],
@@ -17,7 +17,7 @@ const { chains, provider } = configureChains(
 );
 
 const { connectors } = getDefaultWallets({
-  appName: 'Nouns Center',
+  appName: "Nouns Center",
   chains,
 });
 

@@ -14,8 +14,7 @@ const props = [
   {
     title: "DAO Residency",
     href: "https://lilnouns.wtf/vote/15",
-    description:
-      "Residency for lilal409",
+    description: "Residency for lilal409",
     date: "June 14, 2022",
     imageUrl:
       "https://pbs.twimg.com/media/FJcno3EWUAUNAhj?format=jpg&name=large",
@@ -107,8 +106,8 @@ const proposals = () => {
 
           <TextContent title="Overview">
             <p>
-              This guide will walk you through the steps creating a Lil Nouns DAO
-              proposal. If you&apos;re unsure if opening a proposal is the
+              This guide will walk you through the steps creating a Lil Nouns
+              DAO proposal. If you&apos;re unsure if opening a proposal is the
               correct path to take for your ideato receive funding, please refer
               back to{" "}
               <Link text="this guide" url="/funding" leavesPage={false} /> to
@@ -119,36 +118,37 @@ const proposals = () => {
                 text="#proposal-ideas"
                 url="https://discord.com/channels/954142017556979752/974839186320404540"
                 leavesPage={true}
-              />{" "} 
+              />{" "}
               channel in the{" "}
               <Link
-              text="Lil Nouns Discord"
-              url="https://discord.com/invite/xjARUcB3tJ"
-              leavesPage={true}
-            />
+                text="Lil Nouns Discord"
+                url="https://discord.com/invite/xjARUcB3tJ"
+                leavesPage={true}
+              />
               .
             </p>
 
             <p>
-              Alternativly, if you want to conduct an informal community poll on your idea reach out to lil al and a poll can be created for you in <Link
+              Alternativly, if you want to conduct an informal community poll on
+              your idea reach out to lil al and a poll can be created for you in{" "}
+              <Link
                 text="#prop-temp-check"
                 url="https://discord.com/channels/954142017556979752/975580862286553129"
                 leavesPage={true}
               />
             </p>
-
-
           </TextContent>
 
           <TextContent title="Sponsorship">
             <p>
-              Only Lil Noun owners (Nouners) can submit official proposals to the
-              DAO for funding. In particular, at the time of this writing you need 3 Lil Nouns to submit a proposal.
-              
-              If you don&apos;t own enough Lil Nouns yourself then
-              you&apos;ll have to get a sponsor to open the proposal for you.
-              You can connect with a Lil Nouner sponsor either by waiting on
-              feedback on your Discourse post or networking in the Discord.</p>
+              Only Lil Noun owners (Nouners) can submit official proposals to
+              the DAO for funding. In particular, at the time of this writing
+              you need 4 Lil Nouns to submit a proposal. If you don&apos;t own
+              enough Lil Nouns yourself then you&apos;ll have to get a sponsor
+              to open the proposal for you. You can connect with a Lil Nouner
+              sponsor either by waiting on feedback on your Discourse post or
+              networking in the Discord.
+            </p>
           </TextContent>
 
           <TextContent title="How to write a prop">
@@ -173,7 +173,7 @@ const proposals = () => {
               communicated their idea with a simple overview, a timeline with
               milestones, and a cost breakdown.
             </p>
-{/* 
+            {/* 
             <div>
               <div className="relative sm:py-6">
                 <div className="relative max-w-7xl mx-auto">
@@ -330,7 +330,9 @@ const proposals = () => {
               alt="timeline"
             />
             <div className="text-center mt-3 opacity-50 text-sm">
-                <span className="font-bold">Note: </span> While the above image mentions Nouns Governance, as Lil Nouns is a fork of Nouns Governance the process is the same.
+              <span className="font-bold">Note: </span> While the above image
+              mentions Nouns Governance, as Lil Nouns is a fork of Nouns
+              Governance the process is the same.
             </div>
           </TextContent>
         </div>

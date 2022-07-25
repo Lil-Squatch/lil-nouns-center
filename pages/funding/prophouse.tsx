@@ -49,6 +49,17 @@ const prophouse = () => {
             their favorite proposals to get funded.
           </p>
 
+          <p>
+            As of{" "}
+            <Link
+              text="Prop 28"
+              url="https://lilnouns.wtf/vote/28"
+              leavesPage={true}
+            />{" "}
+            Lil Nouns DAO will be funding the next 5 rounds of Lil Nouns
+            Prophouse itself with 10 ETH each per round.
+          </p>
+
           <br />
 
           <p>Some examples of funding rounds:</p>
@@ -59,16 +70,19 @@ const prophouse = () => {
             <li className="ml-6">1 winner of 10Ξ</li>
           </ul>
 
-          <br/>
+          <br />
           <p>
-            For more informatino on Prop House in general visit <Link
+            For more informatino on Prop House in general visit{" "}
+            <Link
               text="nouns.center/funding/prophouse"
               url="https://nouns.center/funding/prophouse"
               leavesPage={true}
-            /> or visit <Link
-            text="prop.house/learn"
-            url="https://prop.house/learn"
-            leavesPage={true}
+            />{" "}
+            or visit{" "}
+            <Link
+              text="prop.house/learn"
+              url="https://prop.house/learn"
+              leavesPage={true}
             />
           </p>
         </TextContent>

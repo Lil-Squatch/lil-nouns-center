@@ -1,8 +1,8 @@
 export const TALENT_FORM_ID = "2721682c-3df8-497f-afe2-f0acc967c304";
-const ADDRESS_FORM_API_KEY = "9f8597ed-74ea-4fbf-8f4d-f814214f874d";
+export const ADDRESS_FORM_API_KEY = "9f8597ed-74ea-4fbf-8f4d-f814214f874d";
 
 
-const ADDRESS_FORM_API_BASE_URL = "https://api.addressform.io/ext-api/v1/form-responses?";
+export const ADDRESS_FORM_API_BASE_URL = "https://api.addressform.io/ext-api/v1/form-responses?";
 
 
 interface AddressFormResponseData {
@@ -51,7 +51,7 @@ const postProcessTalentApiResponse = (rawTalentData: AddressFormAPIResponse) => 
  * @param key  String you're trying to match in API response prompt 
  * @returns Matching API response field if one exists, else null
  */
-const fetchFieldByString = (data: AddressFormResponseData[], key: string) => {
+export const fetchFieldByString = (data: AddressFormResponseData[], key: string) => {
   const filtered = data.filter((element) => {
     return element.prompt.toLowerCase().includes(key.toLowerCase())
   });

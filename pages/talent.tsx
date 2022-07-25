@@ -12,24 +12,27 @@ import Subheader from "../components/Subheader";
 import PageContent from "../components/Layout/PageContent";
 import PageHeader from "../components/Layout/PageHeader";
 import Button from "../components/common/Button";
-import { fetchTalentFormData, TALENT_FORM_ID } from "../utils/talent-form-data-fetching";
+import {
+  fetchTalentFormData,
+  TALENT_FORM_ID,
+} from "../utils/talent-form-data-fetching";
 import { generateRandomLilNoun } from "../utils/get-random-lil-noun";
 
 export const getServerSideProps = async (context) => {
   let talentDataFromAPI = [];
   try {
-	talentDataFromAPI = await fetchTalentFormData();
-  } catch(e) {
+    talentDataFromAPI = await fetchTalentFormData();
+  } catch (e) {
     console.log(e);
   }
 
   return {
-      props: {talent: talentDataFromAPI}
+    props: { talent: talentDataFromAPI },
   };
-}
+};
 
 const Talent = (props) => {
-  const {talent} = props;
+  const { talent } = props;
   return (
     <>
       <PageHeader>
@@ -77,7 +80,9 @@ const Talent = (props) => {
                 </div>
                 <img
                   className="w-16 h-16 bg-gray-300 rounded-full flex-shrink-0"
-                  src={`data:image/svg+xml;utf8,${encodeURIComponent(generateRandomLilNoun(idx))}`}
+                  src={`data:image/svg+xml;utf8,${encodeURIComponent(
+                    generateRandomLilNoun(idx)
+                  )}`}
                   alt=""
                 />
               </div>
@@ -107,7 +112,10 @@ const Talent = (props) => {
                     {person.discord !== "" && (
                       <div className="-ml-px w-0 flex-1 flex cursor-pointer hover:bg-gray-100 transition duration-150 rounded-br-lg ">
                         <a
-                          href={person.discordId !== "" && `https://discord.com/users/${person.discordId}`}
+                          href={
+                            person.discordId !== "" &&
+                            `https://discord.com/users/${person.discordId}`
+                          }
                           target="_blank"
                           rel="noreferrer"
                           className="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent hover:text-gray-500 truncate px-2"
