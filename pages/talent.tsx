@@ -18,7 +18,7 @@ import {
 } from "../utils/talent-form-data-fetching";
 import { generateRandomLilNoun } from "../utils/get-random-lil-noun";
 
-export const getServerSideProps = async (context) => {
+export const getStaticProps = async (context) => {
   let talentDataFromAPI = [];
   try {
     talentDataFromAPI = await fetchTalentFormData();
@@ -28,6 +28,7 @@ export const getServerSideProps = async (context) => {
 
   return {
     props: { talent: talentDataFromAPI },
+    revalidate: 60
   };
 };
 
