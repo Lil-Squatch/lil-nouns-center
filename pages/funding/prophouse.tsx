@@ -49,7 +49,7 @@ const prophouse = () => {
             their favorite proposals to get funded.
           </p>
 
-          <p>
+          <p className="mt-1">
             As of{" "}
             <Link
               text="Prop 28"
