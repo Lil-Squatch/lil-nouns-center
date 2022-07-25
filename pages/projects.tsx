@@ -15,7 +15,7 @@ import {
 } from "../utils/project-form-data-fetching";
 import Image from "next/image";
 
-export const getStaticProps = async (context) => {
+export const getServerSideProps = async (context) => {
   let projectDataFromAPI = [];
   try {
     projectDataFromAPI = await fetchProjectDataFromAPI();
