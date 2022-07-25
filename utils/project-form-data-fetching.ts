@@ -21,7 +21,7 @@ const postProcessAPIResponse = (data) => {
             url: "https://" + fetchFieldByString(responseData, "link")
             .replace("http://","")
             .replace("https://", ""),
-            image: fetchFieldByString(responseData, "thumbnail"),
+            image: fetchFieldByString(responseData, "thumbnail") || null,
             categories: fetchFieldByString(responseData, "categories")
         }
     });

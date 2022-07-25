@@ -56,8 +56,8 @@ const Projects = ({ projects }) => {
         return "Proposals";
       case "prop-pouse":
         return "Prop House Projects";
-      case "small-grants":
-        return "Small Grant Projects";
+      case "lil-grants":
+        return "Lil Grant Projects";
       case "merch":
         return "Merch Shops";
       case "stats":
@@ -69,6 +69,15 @@ const Projects = ({ projects }) => {
     }
   };
 
+  const getFilterKeyFromCategory = (key: string) => {
+    const filtered = categories.filter((item) => item.id === key);
+    if (filtered.length === 0) {
+      return null;
+    }
+
+    return filtered[0].title;
+  };
+
   useEffect(() => {
     if (query.category) {
       setIsLoading(true);
@@ -77,7 +86,11 @@ const Projects = ({ projects }) => {
         setIsLoading(false);
       } else {
         setFilteredProjects(
-          projects.filter((p) => p.category.includes(query.category as string))
+          projects.filter((p) =>
+            p.categories.includes(
+              getFilterKeyFromCategory(query.category as string)
+            )
+          )
         );
         setIsLoading(false);
       }
@@ -168,11 +181,13 @@ const Projects = ({ projects }) => {
                     rel="noreferrer"
                   >
                     <li key={project.title} className="py-4 flex">
-                      <img
-                        className="h-24 w-full max-w-[6rem] object-cover rounded-md"
-                        src={project.image}
-                        alt={project.image}
-                      />
+                      {project.image && (
+                        <img
+                          className="h-24 w-full max-w-[6rem] object-cover rounded-md"
+                          src={project.image}
+                          alt={project.image}
+                        />
+                      )}
                       <div className="mx-auto my-auto">
                         <p className="text-lg font-medium text-gray-900  text-nouns tracking-wide">
                           {project.title}
