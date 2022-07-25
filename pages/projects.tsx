@@ -39,7 +39,7 @@ const Projects = ({ projects }) => {
   const categories = [
     { id: "all", title: "All" },
     { id: "nfts", title: "NFTs" },
-    { id: "proposal", title: "Proposal" },
+    { id: "proposal", title: "Proposals" },
     { id: "prop-house", title: "Prop House" },
     { id: "lil-grants", title: "Lil Grants" },
     { id: "merch", title: "Merch" },
