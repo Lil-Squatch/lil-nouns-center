@@ -61,7 +61,7 @@ const funding = [
     distributed: "across",
     link: "/funding/proposals",
     linkText: "Learn more",
-    lilNounsRequiredText: "3 Lil Nouns Needed to Propose",
+    // LiL Nouns required text set dynamically via graph call
     tagline:
       "Resources allocated for the long-term growth of the Lil Nouns project. Larger in scope and undergo more scruntiny.",
     textColor: "text-[#E5284A]",
@@ -72,13 +72,42 @@ const funding = [
   },
 ];
 
-const Funding = () => {
+export const getStaticProps = async (context) => {
+
+  const graphResponse = await fetch('https://api.thegraph.com/subgraphs/name/lilnounsdao/lil-nouns-subgraph', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+    query: `
+    {
+      proposals(orderBy: startBlock orderDirection: desc first: 1) {
+        id 
+        proposalThreshold
+      }
+    }
+      `,
+  }),
+});
+
+const graphAPIResult = await graphResponse.json();
+
+console.log(graphAPIResult.data.proposals[0]);
+return {
+  props: {
+    proposalThreshold: graphAPIResult.data.proposals[0].proposalThreshold
+  },
+  revalidate: 60
+}
+};
+
+const Funding = ({proposalThreshold}) => {
   return (
     <>
       <PageHeader>
         <Header title="Funding | Lil Nouns Center" />
         <Title title="Funding" />
-
         <Subheader body="Looking to get funding for a Lil Nounish project? There are many ways to go about doing so! Below you can compare the different avenues. It's important to take in to consideration project scope and timeline." />
       </PageHeader>
 
@@ -102,7 +131,10 @@ const Funding = () => {
                   <div className="items-baseline text-4xl">{item.range}Ξ </div>
 
                   <div className="text-sm mt-2">
-                    {item.lilNounsRequiredText}
+                    {
+                      item.source === "Proposals" ? `${proposalThreshold} Lil Nouns Needed to Propose` :
+                      item.lilNounsRequiredText
+                    }
                   </div>
 
                   <div
