@@ -49,7 +49,7 @@ const Intro = ({ docsData }) => {
       </PageHeader>
 
       <PageContent>
-        <div className="introNouns break-all">
+        <div className="introNouns break-words">
           <NotionRenderer blockMap={docsData} />
         </div>
       </PageContent>
