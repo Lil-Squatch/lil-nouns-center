@@ -42,7 +42,7 @@ const funding = [
           brandText={false}
           leavesPage={true}
           text="prop.house/lil-nouns"
-          url="prop.house/lil-nouns"
+          url="https://prop.house/lil-nouns"
         />
         . Each round has a specified ETH amount, and the community votes on who
         wins.
