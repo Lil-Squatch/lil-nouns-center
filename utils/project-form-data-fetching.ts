@@ -1,9 +1,11 @@
 import { ADDRESS_FORM_API_BASE_URL, ADDRESS_FORM_API_KEY, fetchFieldByString } from "./talent-form-data-fetching";
-export const PROJECT_FORM_ID = "4fdd9a3d-2e3a-4ddb-9032-289970c1e8fb";
+export const PROJECT_FORM_ID = "79faa887-ea39-4054-8fc7-7590c4ff5728";
 
+export const NEW_ADDRESS_FORM_API_KEY = "6413f5db-06ad-41fc-8d0c-480c9074de97"
+ 
 export const fetchProjectDataFromAPI = async () => {
     const apiResponse = await fetch(
-        `${ADDRESS_FORM_API_BASE_URL}api_key=${ADDRESS_FORM_API_KEY}&form_id=${PROJECT_FORM_ID}`
+        `${ADDRESS_FORM_API_BASE_URL}api_key=${NEW_ADDRESS_FORM_API_KEY}&form_id=${PROJECT_FORM_ID}`
     );
   
     const rawProjectData = await apiResponse.json();
